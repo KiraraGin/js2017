@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>関数</title>
+  </head>
+  <body>
+    <script>
+    // 税率を表示する関数 
+    function tax_rate() {
+      document.write('<p>税率は' + t + '%です</p>');
+    }
+    // 税額を表示する関数
+    function tax_price(price) {
+      if (price !== '') {
+        document.write('<p>税額は' + price * t + '円です</p>');
+      } else {
+        document.write('<p> 価格を入力してください </p>');
+      }
+    }
+    var t = 5;
+    // 引数なしの呼出し
+    tax_rate();
+    // 引数を指定した呼出し
+    tax_price(100);
+    </script>
+  </body>
+</html>

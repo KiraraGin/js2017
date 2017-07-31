@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+    <script>
+    	function showimg1(){
+    		document.getElementById("img1").src="http://www.asojuku.ac.jp/img/cmn/logo.jpg";
+    	}
+    	function showimg2(){
+    		document.getElementById("img1").src="http://www.asojuku.ac.jp/abcc/img/cmn/logo.jpg";
+    	}
+    	function focusset(){
+    		document.getElementById("text1").style="background-color:gray";
+    	}
+    	function focusunset(){
+    		document.getElementById("text1").style="background-color:white";
+    	}
+    	function changefruit(){
+    		document.getElementById("text1").value =
+    			document.getElementById("select1").selectedIndex;
+    	}    	
+    	window.onload = function(){
+    		document.getElementById("img1").onmouseover = showimg1;
+    		document.getElementById("img1").onmouseout = showimg2;
+    		document.getElementById("text1").onfocus = focusset;
+    		document.getElementById("text1").onblur = focusunset;
+    		document.getElementById("select1").onchange = changefruit;
+    	}
+    </script>
+  </head>
+  <body>
+    <img id="img1" src="http://www.asojuku.ac.jp/abcc/img/cmn/logo.jpg"><br>
+    <input id="text1" type="text" ><br>
+    <select id="select1" >
+      <option>選択してください</option>
+      <option>りんご</option>
+      <option>いちご</option>
+      <option>みかん</option>
+    </select>
+  </body>
+</html>

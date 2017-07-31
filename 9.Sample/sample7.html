@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScriptの練習</title>
+	<script>
+		function reverce(e){
+			var elms = document.getElementsByClassName("menu");
+			for(var i = 0; i < elms.length; i++){
+				elms[i].style.backgroundColor = "white";
+			}
+			e.style.backgroundColor = "gray";	
+		}
+	</script>
+</head>
+<body>
+	<p class="menu" onclick="reverce(this);">ハイナップル</p>
+	<p class="menu" onclick="reverce(this);">ストロベリー</p>
+	<p class="menu" onclick="reverce(this);">アップル</p>
+	<p class="menu" onclick="reverce(this);">ラズベリー</p>
+</body>
+</html>

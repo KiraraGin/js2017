@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+    <script>
+      function check(e) {
+        document.body.innerHTML += e.value + "をクリック<br>";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="赤" onclick="check(this);">
+    <input type="button" value="青" onclick="check(this);">
+    <input type="button" value="黄" onclick="check(this);"><br>
+  </body>
+</html>

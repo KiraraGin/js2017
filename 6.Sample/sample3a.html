@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>三角形の面積</title>
+	<script>
+		function calc_menseki(teihen,takasa){
+			return teihen * takasa / 2;
+		}
+		function w(message){
+			document.writeln(message);
+		}
+		
+		var teihen;
+		var takasa;
+		
+		teihen = parseInt(window.prompt("底辺", ""));
+		takasa = parseInt(window.prompt("高さ", ""));
+		
+		w('面積=' + calc_menseki(teihen,takasa));
+	</script>
+</head>
+<body>
+</body>
+</html>

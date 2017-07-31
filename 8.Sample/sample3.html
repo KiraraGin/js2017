@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+  </head>
+  <body>
+    <img src="http://www.asojuku.ac.jp/abcc/img/cmn/logo.jpg"
+    	onmouseover="src='http://www.asojuku.ac.jp/img/cmn/logo.jpg'"
+    	onmouseout="src='http://www.asojuku.ac.jp/abcc/img/cmn/logo.jpg'"
+    ><br>
+    <input type="text" 
+    	onfocus="style='background-color:gray'"
+    	onblur="style='background-color:white'"
+    ><br>
+    <select onchange="document.body.innerHTML += selectedIndex + '<br>';">
+      <option>選択してください</option>
+      <option>りんご</option>
+      <option>いちご</option>
+      <option>みかん</option>
+    </select><br>
+  </body>
+</html>

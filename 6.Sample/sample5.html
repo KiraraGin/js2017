@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>isNaN</title>
+	<script>
+		var age = window.prompt("年齢?", "");
+		if (isNaN(age)){
+			document.write("数字で入力してください");
+		}
+		else{
+			var now=new Date(); 
+			document.write(now.getFullYear() - age + "年生まれ");
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

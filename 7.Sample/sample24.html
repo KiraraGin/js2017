@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>入力チェック</title>
+		<script>
+			function check(){
+		    	var str = document.form.post.value;
+		    	var regex = /^[0-9]{3}-[0-9]{4}$/;
+    			if(!regex.test(str)){
+					window.alert('郵便番号が正しくありません');
+					return false;
+				}
+				if(document.form.address.value == ""){
+					window.alert('住所が未入力です');
+					return false;
+				}
+				if(document.form.name.value == ""){
+					window.alert('氏名が未入力です');
+					return false;
+				}
+				str = document.form.tel.value;
+				regex = /^0[0-9]{1,4}-[0-9]{1,4}-[0-9]{4}$/;
+				if(!regex.test(str)){
+					window.alert('電話番号が正しくありません');
+					return false;
+				}
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+		<h3>入力チェック</h3>
+		<form action="" name="form" onSubmit="return check()">
+			<label>郵便番号
+				<input type="text" name="post">
+			</label><br>
+			<label>住所
+				<input type="text" name="address">
+			</label><br>
+			<label>氏名
+				<input type="text" name="name">
+			</label><br>
+			<label>電話番号
+				<input type="text" name="tel">
+			</label><br>
+			<input type="submit" value="登録">
+			<input type="reset" value="リセット">
+		</form>
+	</body>
+</html>

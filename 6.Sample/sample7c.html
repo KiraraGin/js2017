@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>匿名関数</title>
+	<script>
+		var f = function (num1, num2){
+			var ans=1;
+			for(var i = 0; i < num2; i++){
+				ans *= num1;
+			}
+			return ans;
+		}
+		
+		var num1 = parseInt(window.prompt("基数", ""));
+		var num2 = parseInt(window.prompt("指数", ""));
+
+		ans = f(num1, num2);
+		document.write(ans);
+	</script>
+</head>
+<body>
+</body>
+</html>

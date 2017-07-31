@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>繰り返し処理(while,continue)</title>
+  </head>
+  <body>
+    <script>
+    var i = 1;
+    var sum = 0;
+    while ( i <= 10 ) {
+      if ( i == 5 ) {
+        i++;
+        continue;			//次のループへ
+      }
+      sum += i;
+      i++;
+    }
+    document.write(sum);
+    </script>
+  </body>
+</html>

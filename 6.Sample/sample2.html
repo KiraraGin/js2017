@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>関数</title>
+  </head>
+  <body>
+  <script>
+    // 税込金額を返す関数
+    function total_price(price) {
+      var t = 1.05;
+      if ( price !== '' ) {
+        return price * t;
+      }
+    }
+    document.write('<p> 税込合計金額は' +  total_price(100) + '円です。</p>');
+  </script>
+  </body>
+</html>

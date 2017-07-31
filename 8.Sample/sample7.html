@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScriptの練習</title>
+	<script>
+		var str = "JavaScriptの練習";  
+
+		function disp(){
+			var p = document.getElementById("id1");
+			cnt = p.innerHTML.length
+			if (cnt < str.length){
+				p.innerHTML = str.slice(0,cnt+1)
+			}
+			else{
+				p.innerHTML =  "";
+			}
+		}
+	</script>
+</head>
+<body onload="setInterval('disp()',500)">
+	<p id="id1"></p>
+</body>
+</html>

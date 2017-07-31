@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>DOMの練習</title>
+	<script>
+		function disp(){
+			msg = document.form1.dname.value + "の";
+			msg += document.form2.lname.value + "　";
+			msg += document.form2.fname.value + "さん、こんにちは";
+			alert(msg);
+		}
+	</script>
+</head>
+<body>
+	<h3>DOMの練習</h3>
+	<form name="form1">
+		<label>所属
+			<input type="text" name="dname">
+		</label><br>
+	</form>
+	<form name="form2">
+		<label>氏名
+			<input type="text" name="lname">
+			<input type="text" name="fname">
+		</label><br>
+	</form>
+	<input type="button" value="送信" onclick="disp()">
+</body>
+</html>

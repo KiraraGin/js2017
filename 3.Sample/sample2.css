@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#d1 {
+	width:300px;
+	height:300px;
+	background:#aaaaff;
+}
+#d2 {
+	width:300px;
+	height:300px;
+	background:#aaffaa;
+}

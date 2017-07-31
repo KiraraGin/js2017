@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScriptの練習</title>
+	<script>
+		var count = 2;
+		var max = 5;
+		
+		function disp() {
+			if( count > max ) {
+				count = 1;
+			}
+			var fname = "./image/" + count + ".png";
+			document.getElementById("photo").src = fname;
+			count++;
+		}
+	</script>
+</head>
+<body onload="setInterval('disp()',3000)">
+	<img src="./image/1.png" id="photo">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScriptの練習</title>
+	<script>
+		function check(){
+			if(document.form1.user.value == ""){
+				document.form1.submit.disabled = true;
+			}
+			else{
+				document.form1.submit.disabled = false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="form1">
+		<input type="text" name="user" onchange="check();">
+		<input type="submit" name="submit" value="登録" disabled="true">
+	</form>
+</body>
+</html>

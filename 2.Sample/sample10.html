@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="shift_jis">
+		<title>Google検索</title>
+	</head>
+	<body>
+		<h3>Google検索</h3>
+		<form action="http://www.google.co.jp/search">
+			<label>検索キーワード
+				<input type="text" name="q">
+			</label><br>
+			<select name="tbm">
+				<option value="">通常</option>
+				<option value="isch">画像</option>
+				<option value="nws">ニュース</option>
+				<option value="shop">ショッピング</option>
+			</select><br>
+			<label>パーソナライズド検索
+				<input type="radio" name="pws" value="1" checked>有効
+				<input type="radio" name="pws" value="0" >無効
+			</label><br>
+			<input type="submit" value="検索">
+			<input type="reset" value="リセット">
+		</form>
+	</body>
+</html>

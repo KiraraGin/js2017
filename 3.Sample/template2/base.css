@@ -1,0 +1,235 @@
+@charset "shift_jis";
+
+/* -------------------------------------------------------------
+
+[1] レイアウトに関する指定
+[2] ヘッダーブロック内に関する指定
+[3] コンテンツブロック内に関する指定
+[4] サイドバーブロック内に関する指定
+[5] フッターブロック内に関する指定
+[6] CSSデザインサンプルリンク指定
+
+----------------------------------------------------------------
+CSSデザインサンプ [ URL ] http://www.css-designsample.com
+------------------------------------------------------------- */
+
+
+/* 一括で全ての要素の余白をゼロに指定 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 全体的なリンク */
+
+a:link,
+a:visited,
+a:hover,
+a:active { text-decoration: underline; }
+
+a:link { color: #00f; }
+
+a:visited { color: #90f; }
+
+a:hover { color: #f00; }
+
+a:active { color: #f00; }
+
+/* -------------------------------------------------------------
+   [1] レイアウトに関する指定 */
+body {
+  font-size: 85%;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: url(img/bg-body.jpg) repeat-x 0 0;
+}
+
+/*-- 全体を囲んでいます --*/
+#wrapper {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+  background: url(img/bg-wrapper.jpg) repeat-y -50px 0;
+  border-right: 1px solid #39f;
+}
+
+/*-- ヘッダー部分 --*/
+#header {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  background: url(img/n19gk.jpg) no-repeat -200px -150px;
+}
+
+/*-- コンテンツ部分 --*/
+#contents {
+  width: 540px;
+  float: right;
+  padding: 50px 30px 20px 0;
+}
+
+/*-- サイドバー部分 --*/
+#sidebar {
+  width: 200px;
+  float: left;
+}
+
+/*-- フッター部分 --*/
+#footer {
+  width: 800px;
+  margin: 0 auto;
+  padding: 2em 0 0.5em;
+  background: url(img/bg-wrapper.jpg) repeat-y -50px 0;
+  border-right: 1px solid #39f;
+}
+
+/* -------------------------------------------------------------
+   [2] ヘッダーブロック内に関する指定 */
+
+/* 見出し */
+
+h1 {
+  font-size: 100%;
+  font-weight: normal;
+  text-align: right;
+  position: absolute;
+  top: 30px;
+  left: 230px;
+  color: #39f;
+}
+
+/* サイトタイトル */
+.logo {
+  font-size: 160%;
+  position: absolute;
+  top: 50px;
+  left: 230px;
+}
+
+.logo a {
+  font-weight: bold;
+  color: #39f;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+
+/* 概要 */
+.description {
+  line-height: 1.5em;
+  position: absolute;
+  bottom: 10px;
+  left: 230px;
+  color: #333;
+}
+
+/* サイトマップ等へのリスト */
+.ul-info {
+  list-style-type: none;
+  position: absolute;
+  top:25px;
+  right: 10px;
+}
+
+.ul-info li {
+  display: inline;
+  margin-left: 0.5em;
+}
+
+.ul-info li a {
+  text-decoration:none;
+  color: #fff;
+}
+
+.ul-info li a:hover {
+  text-decoration: underline;
+  color: #f00;
+}
+
+/* -------------------------------------------------------------
+   [3] コンテンツブロック内に関する指定 */
+
+/* 見出し */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 160%;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  color: #036;
+  border-bottom: 1px solid #036;
+}
+
+/* 文字 */
+#contents p {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* -------------------------------------------------------------
+   [4] サイドバーブロック内に関する指定 */
+
+/* サイドバータイトル */
+.side-title {
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  background-color: #333;
+  color: #eee;
+}
+
+ul.localnavi {
+  font-size: 95%;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.localnavi li { display: inline; }
+
+.localnavi a {
+  text-decoration: none;
+  width: 190px;
+  display: block;
+  padding: 4px;
+  border: 1px outset #39f;
+  background-color: #39f;
+  color: #fff;
+}
+
+.localnavi a:hover {
+  text-decoration: none;
+  border: 1px outset #39f;
+  background-color: #36c;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------
+   [5] フッターブロック内に関する指定 */
+
+#footer p { text-align: right;padding-right: 20px; }
+
+/* -------------------------------------------------------------
+   [6] CSSデザインサンプルリンク指定 */
+
+#cds {
+  font-size: 80%;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  text-align: right;
+  margin: 0;
+  padding-right: 20px;
+  clear: both;
+}
+
+#cds,
+#cds a,
+#cds a:hover {
+  text-decoration: none;
+  color: #ccc;
+}

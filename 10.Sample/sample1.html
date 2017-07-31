@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<script src="ve/jquery-1.8.2.min.js"></script>
+	<script src="ve/jquery.validationEngine.js"></script>
+	<script src="ve/jquery.validationEngine-ja.js"></script>
+	<link rel="stylesheet" href="ve/validationEngine.jquery.css">
+	<script>
+		$(function(){
+			jQuery("#myform").validationEngine();
+		});
+	</script>
+</head>
+<body>
+	<h3>入力フォーム</h3><hr>
+	<form id="myform" name="" post="">
+		<label>名前</label>
+		<input type="text" name="" class="validate[required]">
+		<br><label>メールアドレス</label>
+		<input type="text" name="" class="validate[required,custom[email]]">
+		<br><label>電話番号</label>
+		<input type="text" name="" class="validate[custom[phone]]">
+		<br><label>URL</label>
+		<input type="text" name="" class="validate[custom[url]]">
+		<input type="submit" name="" id="btn_submit">
+	</form>
+</body>
+</html>

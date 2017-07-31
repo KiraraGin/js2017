@@ -1,0 +1,36 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+#wrapper {
+   width: 700px;
+   margin: 0 auto;/* 幅固定（700px）でセンタリング*/
+}
+#header {
+   width: 700px;
+   height: 50px;
+   background-color: blue;
+}
+#main {
+   width: 700px;
+   overflow: hidden; /* 親ボックスでフロート解除*/
+}
+#menu {
+   float: left;
+   width: 150px;
+   background-color: green;
+   position: fixed ;
+}
+#contents {
+   float: right;
+   width: 550px;
+   background-color: aqua;
+}
+#footer {
+   width: 700px;
+   height: 50px;
+   background-color: gray;
+}
+#menu ul {
+   list-style: none;
+}

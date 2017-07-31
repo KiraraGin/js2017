@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScriptの練習</title>
+	<script>
+		var company = window.prompt("会社名?","株式会社");
+		if(company.indexOf("株式会社") == 0){
+			document.write(company.slice(4,company.length));
+		}
+		else{
+			document.write(company.slice(0, company.indexOf("株式会社")));
+		}
+</script>
+</head>
+<body>
+</body>
+</html>
